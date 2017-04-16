@@ -1,0 +1,16 @@
+### PROTECT FILES ###
+<FilesMatch "\.(htaccess|htpasswd|ini|fla|psd|log|sh)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+
+RewriteEngine on
+
+RewriteRule panel panel.php
+RewriteRule optymalizacja-snu optymalizacja-snu.php
+RewriteRule swiadomosc swiadomosc.php
+RewriteRule analiza-dnia analiza-dnia.php
+RewriteRule swiadomy-sen swiadomy-sen.php
+RewriteRule psycholog psycholog.php
+RewriteRule napisz napisz.php
+RewriteRule dieta dieta.php
